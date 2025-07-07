@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartik - Front-End Developer</title>
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e0032, #3a0a5b);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Header Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 5px;
+  width: 0%;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background: linear-gradient(90deg, #1a1a2e, #3f0d6a, #8225aa);
+  border-radius: 20px;
+  margin: 40px;
+}
+
+.content {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.name {
+  color: #fff;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.blue {
+  color: #66d9ef;
+}
+
+.purple {
+  color: #c792ea;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #66d9ef, #c792ea);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Image Section */
+.image img {
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="work.html">WORK</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="content">
+      <h1>Hi, I’m <span class="name">Kartik</span></h1>
+      <h2><span class="blue">Front-End</span> <span class="purple">Developer.</span></h2>
+      <p>
+        A self-taught front-end developer with over 2 months of experience, I build responsive and user-friendly websites.
+        I focus on clean code and efficient design, ensuring seamless interactions that align with both user expectations and business objectives.
+      </p>
+      <a class="btn" href="contact.html">Contact</a>
+    </div>
+    <div class="image">
+      <img src="yourprofile.jpg" alt="Kartik Profile Photo" />
+    </div>
+  </main>
+</body>
+</html>
